@@ -1,0 +1,14 @@
+.CheckoutSummary {
+    text-align: center;
+    width: 80%;
+    margin:  auto;
+}
+.CheckoutSummary h1{
+    color: rgb(128, 90, 90);
+}
+.CheckoutSummary h1 small{
+    color: rgb(179, 110, 110);
+    display: block;
+    font-weight: 300;
+    font-size: 14px;
+}

@@ -1,0 +1,10 @@
+.Layout{
+   
+    background-color: rgb(50, 50, 66);
+    padding: 10px;
+    background-color: #703b09;
+    color: whitesmoke;
+}
+.Layout p{
+    text-align: center;
+}

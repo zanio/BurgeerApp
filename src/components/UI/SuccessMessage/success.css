@@ -1,0 +1,15 @@
+.Success {
+    background-color: white;
+    box-shadow: 0 1px 2px 1px #ccc;
+    color:green;
+    font-size: 1.5em;
+    padding: 1em
+
+}
+
+.Success Button{
+    padding: .6em;
+    text-align:center;
+    margin:auto 20%;
+    
+}

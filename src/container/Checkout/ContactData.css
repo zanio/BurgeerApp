@@ -1,0 +1,36 @@
+.ContactData{
+    margin:20px auto;
+    width: 80%;
+    text-align: center;
+    box-shadow: 0 1px 2px 1px #ccc;
+    padding: 1em;
+    background-color: white;
+}
+
+.ContactData h4{
+    color: rgb(128, 90, 90);
+    text-align: center;
+ 
+}
+.ContactData Button{
+    margin-top: 10px;
+    display: block;
+    background-color: greenyellow;
+    padding: 5px;
+    width: 100%;
+    text-align: center;
+}
+.ContactData Button:disabled{
+    cursor: not-allowed;
+    background-color: #eee;
+    color: #666;
+
+}
+.ContactData input:not([name=postal] ) {
+   margin-bottom: 12px;
+}
+@media (min-width:600px){
+    .ContactData{
+        width: 500px;
+    }
+}

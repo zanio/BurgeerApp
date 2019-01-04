@@ -1,0 +1,83 @@
+.Home div:nth-of-type(2){
+    background-image: url('../../assets/Images/hero-image.jpg');
+    width: 100%;
+    height: 500px;
+    background-color: rgba(175, 175, 175, 0.699);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    position: relative;
+}
+.Home div:nth-of-type(2) p{
+    z-index: 33;
+    position: absolute;
+    left: 0;
+    padding-top: 1em;
+    text-align: center;
+    font-size: 2.4em;
+    font-family: 'Lato';
+    margin:0 auto;
+    width: 100%;
+    font-weight: bold;
+}
+.Home div:nth-of-type(2) p span{
+    display: block;
+    padding-top: 1em;
+    padding-bottom:.5em;
+    font-size: 1.3rem;
+    font-weight: lighter;
+    width:500px;
+    margin:0 auto;
+    
+}
+.Home div:nth-of-type(2) p button{
+    
+    outline: none;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.13);
+    color: white;
+    font-size: .9em;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', 'sans-serif';
+    cursor: pointer;
+    box-shadow: 0 1px 1px 1px rgba(204, 204, 204, 0.225);
+    margin-top: 20px;
+}
+.Overlay{
+    width: 100%;
+    height: 500px;
+    margin: 0 auto;
+    background-color: rgba(33, 44, 54, 0.8);
+    position: absolute;
+    left: 0;
+    z-index: 30;
+    right: 0;
+}
+
+@media(max-width:600px){
+    .Home div:nth-of-type(2){
+        height: 350px;
+        
+    }
+
+    .Home div:nth-of-type(2) p span{
+    
+    width:300px;
+    
+    
+}
+    
+    .Overlay{
+        height: 350px;
+        width: 90%;
+        
+    }
+    .Home div:nth-of-type(2) p{
+        padding-left: 0em;
+    }
+    .Home div:nth-of-type(2) p span{
+        
+        padding-top: .6em;
+        font-size: 1rem;
+        
+    }
+}
