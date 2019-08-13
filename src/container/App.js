@@ -1,15 +1,14 @@
-import React, { Component } from 'react';
+import React, { useEffect } from 'react';
 import { Route, Switch,withRouter, Redirect } from 'react-router-dom';
 import { connect } from 'react-redux'
 
 import '../App.css';
-import Aux from '../Hoc/aux';
 import classes from '../components/layout/layout.css';
 import Layout from '../components/layout/layout'
 import Footer from '../container/footer/footer';
 
 import * as actionCreator from '../store/actions/index';
-import asyncComponent from '../Hoc/asyncComponent/asyncComponent';
+import asyncComponent from '../highordercomp/asyncComponent/asyncComponent';
 
 
 const asynSuccess = asyncComponent( () => {
@@ -40,23 +39,15 @@ const asynLogout = asyncComponent( () => {
     return import('./Auth/Logout/Logout');
 });
 
-class App extends Component {
+const App = props => {
 
-  state={
-
-  }
-
-  componentDidMount(){
-    this.props.onTryAuto();
-  }
-
- 
-  render() {
-   
+  useEffect(()=>{
+    props.onTryAuto();
+  },[]);
   
    return (
-      <Aux >
-      <Layout className={classes.Aux} idToken={this.props.idToken}
+     <React.Fragment>
+      <Layout className={classes.Aux} idToken={props.idToken}
       >
       <Switch>
       <Route path="/checkout"  component = {asynCheckout} />
@@ -70,9 +61,9 @@ class App extends Component {
       
       </Layout>
       <Footer />
-      </Aux>
+      </React.Fragment>
     );
-  }
+  
 }
 
 const mapStateToProps = state =>{
@@ -99,7 +90,7 @@ exact to tell the browser
 that only if the '/' is visited that 
 when it should be loaded, when using 
 the Switch method load seconday path 
-before the maain url, i.e '/checkout'
+before the main url, i.e '/checkout'
  before '/' and wrap all in 
 switch component
 

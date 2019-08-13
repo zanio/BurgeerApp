@@ -1,7 +1,7 @@
-import React, {Component} from 'react'
+import React, { Component } from 'react';
 
 import classes from './home.css';
-import Aux from '../../Hoc/aux';
+import Aux from '../../highordercomp/AuxHoc';
 
 class Home extends Component{
 

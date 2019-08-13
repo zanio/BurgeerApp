@@ -1,14 +1,14 @@
 import React ,{Component} from 'react';
 import { connect } from 'react-redux';
 
-import Aux from '../../Hoc/aux';
+import Aux from '../../highordercomp/AuxHoc';
 import Burger from '../../components/Buger/Burger';
 import instance from '../../orderAxios';
 import BuldControls from '../../components/Buger/BuildControls/BuildControl';
 import Modal from '../../components/UI/modal/Modal';
 import OrderSummary from '../../components/Buger/OrderSummary/OrderSummary';
 import Spinner from '../../components/UI/Spinner/spinner';
-import withErrorHandler from '../../Hoc/withErrorHandler/withErrorHandler';
+import withErrorHandler from '../../highordercomp/withErrorHandler/withErrorHandler';
 import * as actionCreators from '../../store/actions/index';
 // We use uppercase  when naming global variable...
 

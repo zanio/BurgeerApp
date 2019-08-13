@@ -5,7 +5,7 @@ import { Redirect } from 'react-router-dom'
 import Order from '../../components/Order/Order';
 import instance from '../../orderAxios';
 import Spinner from '../../components/UI/Spinner/spinner';
-import withErrorHandler from '../../Hoc/withErrorHandler/withErrorHandler';
+import withErrorHandler from '../../highordercomp/withErrorHandler/withErrorHandler';
 import * as actionCreator from '../../store/actions/index';
 
 class Orders extends Component {
@@ -59,6 +59,7 @@ class Orders extends Component {
         );
     }
 }
+
 const mapStateToProps = state =>{
     return {
         ings: state.getOrder.ingredients,

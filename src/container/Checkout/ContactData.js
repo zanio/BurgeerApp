@@ -6,7 +6,7 @@ import classes from './ContactData.css';
 import Buttton from '../../components/UI/Button/Button';
 import Spinner from '../../components/UI/Spinner/spinner';
 import Input from '../../components/UI/input/Input';
-import withErrorHandler from '../../Hoc/withErrorHandler/withErrorHandler';
+import withErrorHandler from '../../highordercomp/withErrorHandler/withErrorHandler';
 import * as actionCreators from '../../store/actions/index';
 import { checkValidity } from '../../shared/utility';
 
@@ -210,12 +210,3 @@ const mapDispatchToProps = dispatch => {
  }
 
 export default connect(mapStateToProps, mapDispatchToProps)(withErrorHandler(ContactData,instance));
-
-/*
-There are several ways to convert an object into an array, but the best method to apply is the one below:
-let TransformedArray = []
-
-for(let key  in this.state.data){
-    TransformedArray.push({config:this.state.data[key],id:key})
-}
-*/

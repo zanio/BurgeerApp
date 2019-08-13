@@ -9,8 +9,7 @@ import Card from '../../card/card';
 
 const NavItem = (props)=>(
 
-    <ul className={classes.NavItem}>
-        
+    <ul className={classes.NavItem}> 
     <NavList link="/" exact> Home </NavList>
       <NavList link="/buggerBuilder" exact> Burger Builder </NavList>
 
